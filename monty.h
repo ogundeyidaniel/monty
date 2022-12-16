@@ -86,5 +86,4 @@ instruct_func get_op_func(char *str);
 ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 void addqueue(stack_t **head, int n);
 void f_queue(stack_t **head, unsigned int counter);
-
 #endif /* _MONTY_H */
