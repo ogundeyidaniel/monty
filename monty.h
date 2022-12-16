@@ -77,13 +77,4 @@ void sub_top_two(stack_t **stack, unsigned int line_number);
 void div_top_two(stack_t **stack, unsigned int line_number);
 void mul_top_two(stack_t **stack, unsigned int line_number);
 void mod_top_two(stack_t **stack, unsigned int line_number);
-extern global_var var_global;
-
-void read_file(char *filename, stack_t **stack);
-char *parse_line(char *line, stack_t **stack, unsigned int line_number);
-typedef void (*instruct_func)(stack_t **stack, unsigned int line_number);
-instruct_func get_op_func(char *str);
-ssize_t getline(char **lineptr, size_t *n, FILE *stream);
-void addqueue(stack_t **head, int n);
-void f_queue(stack_t **head, unsigned int counter);
 #endif /* _MONTY_H */
